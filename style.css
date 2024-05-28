@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color : #D4F4DD; 
+    --second-bg-color:#0E7C7B;
+    --hightlight-color:#17BEBB;
+    --text-color : #0F110C;
+    --second-text-color : #F9F1F1;
+
+    --p-font:1rem;
+    --h1-font:2rem;
+    --h2-font:1.5rem;
+}
+body{
+    background: var(--bg-color);
+    
+}
+.card{
+    width: 90%;
+    /* height: 90vh; */
+    max-width: 470px;
+    background: url(./assets/download.jpg);
+    background-size: cover;
+    color: var(--second-text-color);
+    border-radius: 2.5rem;
+    margin: 90px auto 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: var(--second-text-color);
+    color: var(--text-color);
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 5rem;
+    flex: 1;
+    margin-right: 16px;
+    font-size: var(--p-font);
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: var(--second-text-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 20px;
+    padding-top: 5px;
+}
+.wheather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.wheather h1{
+    font-size: 5rem;
+    font-weight: 500;
+}
+.wheather h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: -10px;
+
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity,.wind{
+    font-size: var(--h2-font);
+    margin-top: -6px;
+}
